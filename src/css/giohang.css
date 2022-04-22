@@ -1,0 +1,600 @@
+* {
+    color: #666666;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+}
+
+.header,
+.main,
+.footer {
+    margin: 10px 10px 0 0;
+}
+
+
+/** Header **/
+
+.search__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__link {
+    padding-left: 8px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+}
+
+.logo {
+    display: flex;
+    background-color: #f4f4f7;
+}
+
+.logo-item {
+    flex: 1;
+    text-align: center;
+}
+
+.item2 h1 {
+    padding: 10px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: black;
+}
+
+.item2 p {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.item3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search,
+.login,
+.cart {
+    padding-right: 20px;
+    font-size: 30px;
+    padding: 20px 30px 5px 0px;
+}
+
+.item3 .login i:hover {
+    color: black !important;
+    font-size: 20px;
+}
+
+.item3 .cart i:hover {
+    color: black !important;
+    font-size: 20px;
+}
+
+.item3 .search i:hover {
+    color: black !important;
+    font-size: 20px;
+}
+
+
+/** Menu **/
+
+.menu a {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    text-align: center;
+    position: relative;
+}
+
+.menu .li1 {
+    padding: 20px 40px 10px 40px;
+}
+
+.menu li:hover .submenu>li {
+    display: block;
+    top: 0px;
+    background-color: white;
+    border-top: 0.5px solid #b8b8b8;
+}
+
+.submenu li:hover {
+    background-color: #b8b8b8 !important;
+}
+
+.submenu li {
+    width: 150px;
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    margin-top: 10px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu .li2,
+.li3 {
+    padding: 10px 10px;
+}
+
+.submenu .li3 {
+    margin-top: -0.5px;
+    margin-left: 5px;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+    background-color: white;
+    border-top: 0.5px solid #b8b8b8;
+}
+
+.submenu-2 li {
+    display: none;
+    width: 190px;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+}
+
+.arrow {
+    margin-left: 8px;
+    color: #eee;
+    font-size: 12px;
+}
+
+.menu {
+    background-color: white;
+}
+
+
+/** Menu sticky */
+
+.sticky {
+    box-shadow: 1px 1px 1px 2px rgb(180, 178, 178);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    opacity: 1;
+    background-color: rgb(162, 185, 185);
+}
+
+
+/** Main */
+
+.gh_main {
+    border-top: 3px solid #ecdfdf;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gh_bot {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* danh sách sản phẩm */
+
+.gh_left2 {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.gh_left2_item h3 {
+    display: inline-block;
+}
+
+.line_bottom {
+    padding: 10px 0 10px 30px;
+    border-bottom: 1px solid #ecdfdf;
+    background-color: #f5f3f3;
+}
+
+.gh_left2_item_bot {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 60px;
+}
+
+.gh_sp {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+    border-bottom: 1px double #c5c3c3;
+}
+
+.gh_sp_item_left {
+    flex: 3;
+}
+
+.gh_sp_item_left {
+    display: flex;
+    flex-direction: row;
+}
+
+.gh_sp_img {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.gh_sp_detail {
+    padding-left: 20px;
+    flex: 6;
+}
+
+.gh_sp_detail a,
+.gh_sp_detail p {
+    padding: 7px 0px;
+}
+
+.gh_sp_detail .xoa {
+    padding: 3px;
+    border: 1px solid #ecdfdf;
+    background-color: #f7a2a2;
+}
+
+.gh_sp_detail button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.gh_sp_item_right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.gh_soLuong {
+    flex: 1;
+}
+
+.gh_soLuong span {
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(245, 61, 61)
+}
+
+.gh_gia {
+    flex: 1;
+}
+
+.gh_gia span {
+    border: 1px solid #c5c3c3;
+    padding: 4px 15px;
+    float: left;
+}
+
+.soLuong_click {
+    padding: 4px 5px !important;
+}
+
+.gh_gia a:hover {
+    font-weight: bold;
+    color: brown;
+}
+
+.muaThemSp {
+    padding: 15px 0px 0px 15px;
+}
+
+.muaThemSp a {
+    font-weight: bold;
+    text-decoration: underline;
+    padding-right: 3px;
+}
+
+.muaThemSp a:hover {
+    color: brown;
+}
+
+
+/* Hóa đơn */
+
+.gh_right2 {
+    background-color: #f5f3f3;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px dotted #c5c3c3;
+}
+
+.gh_tinhTien_item {
+    display: flex;
+    flex-direction: row;
+}
+
+.gh_tinhTien_item h3 {
+    margin: auto;
+}
+
+.gh_tinhTien_item {
+    padding: 10px 0;
+}
+
+.gh_bgcolor {
+    background-color: #b8b8b8;
+}
+
+.gh_tinhTien_item_left {
+    flex: 1;
+}
+
+.gh_tinhTien_item_right {
+    flex: 1;
+    text-align: right;
+}
+
+.gh_tinhTien_item input,
+.gh_tinhTien_item button {
+    padding: 5px 5px !important;
+}
+
+.btn_dongY {
+    background-color: green;
+    color: rgb(233, 233, 233);
+    border-radius: 0px 0px 3px 3px;
+    border: none;
+    display: block;
+}
+
+.tienHanhDatHang {
+    padding: 10px 0px !important;
+    width: 100%;
+    color: rgb(233, 233, 233);
+    background-color: brown;
+    border: none;
+    border-radius: 3px;
+}
+
+.gh_tinhTien_item button:hover {
+    color: rgb(27, 189, 189);
+}
+
+
+/* hóa đơn */
+
+
+/*_________end main______*/
+
+
+/** Footer **/
+
+.footerP {
+    background-color: #5b5b5b;
+    color: white;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer_item {
+    padding: 50px 30px 50px 30px;
+}
+
+.footer .left {
+    flex: 3;
+}
+
+.footer .between {
+    color: white;
+    flex: 2;
+}
+
+.footer .right {
+    flex: 5;
+    color: white;
+}
+
+.footer .right h2 {
+    color: white !important;
+}
+
+.footer .right p {
+    color: white;
+}
+
+.footer_ul li {
+    list-style: none;
+    display: block;
+    padding: 10px;
+}
+
+.footer_ul a {
+    color: white;
+}
+
+.right h2 {
+    font-size: 25px;
+}
+
+.footer_ul li:hover a {
+    color: #666666;
+}
+
+
+/** form dang nhap */
+
+.formLogin {
+    opacity: 1 !important;
+    position: absolute;
+    top: 30px;
+    left: 230px;
+    display: flex;
+    display: none;
+    background-color: white;
+    flex-direction: row;
+    padding: 30px 0;
+    padding-top: 10px;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+    border: 1px solid rgb(133, 137, 138);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.form_Login_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    padding-right: 60px;
+}
+
+.dangKi {
+    border-left: 1px solid rgb(217, 221, 213);
+}
+
+.login1 {
+    padding-right: 60px;
+    padding-top: 55px;
+}
+
+.login_item {
+    padding: 10px;
+}
+
+.login_item input {
+    margin-top: 10px;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.radio input {
+    width: 10px;
+}
+
+.btn button {
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: rgb(121, 129, 121)
+}
+
+.quenPass a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login_item.quenPass {
+    padding: 5px !important;
+}
+
+.quenPass a {
+    padding-left: 5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    background-color: rgb(207, 204, 204);
+    color: dimgray;
+    padding: 10px 0;
+}
+
+.btn button:hover {
+    background-color: darkcyan;
+}
+
+.quenPass a:hover {
+    color: black;
+}
+
+.btn2 button {
+    padding: 0px 5px;
+    margin-left: 320px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(138, 126, 126);
+}
+
+.login_item.btn2 button {
+    color: white;
+    font-size: 30px;
+}
+
+.btn2 button:hover {
+    background-color: darkcyan;
+}
+
+.login1 span,
+.dangKi span {
+    font-size: 15px;
+    color: red;
+}
+
+
+/** Reponsive **/
+
+
+/* Iphone */
+
+@media only screen and (max-width: 320px) {
+    .item1 {
+        display: none;
+    }
+    .noiBat_item {
+        min-width: 200px;
+    }
+}

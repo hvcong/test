@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/grid.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+
+<body>
+    <!-- Form đăng nhập đây nha -->
+    <div class="formLogin" id="formLogin">
+        <div class="form_Login_item login1">
+            <div class="login_item btn2" style="margin-left:500px ;">
+                <button onclick="closeFormLogin()">&times;</button>
+            </div>
+            <div class="login_item title">
+                <h2 style="font-size: 17px !important;font-weight: bold !important;color: black !important; background-color: aqua;">ĐĂNG NHẬP
+                </h2>
+            </div>
+            <div class="login_item name">
+                <label for="name">Tên tài khoản </label><br>
+                <input type="text" name="name" id="name" placeholder="Tài khoản...">
+                <span id="tb_tk" onclick="test()">(*)</span>
+            </div>
+            <div class="login_item pass">
+                <label for="pass">Mật khẩu*</label><br>
+                <input type="password" name="pass" id="pass" placeholder="Mật khẩu...">
+                <span id="tb_pass">(*)</span>
+            </div>
+
+            <div class="login_item radio">
+                <input type="radio" name="radio" id="radio">
+                <label for="radio">Ghi nhớ mật khẩu</label><br>
+            </div>
+            <div class="login_item btn">
+                <button id="dn" type="submit">ĐĂNG NHẬP</button>
+            </div>
+
+            <div class="login_item quenPass">
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+            <div>
+                <label for="">Tạo tài khoản mới</label>
+                <button><a href="../html/DangKy.html">Đăng ký</a></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="grid">
+        <div class="row">
+            <div class="header l-12" style="background-color: #d8e4fc;">
+                <div class="row">
+                    <div class="l-3 c-12">
+                        <img src="../img/trangchu/logo.png" alt="logo" width="75%">
+                    </div>
+                    <div class="l-5 l-o-4 c-o-1">
+                        <div class="row">
+                            <div class="search l-5 l-o-2 search__container l-5 l-o-2 search__container ">
+                                <input id="search" type="search" placeholder="Tìm kiếm...">
+                                <a href="#"> <i class="fas fa-search search__link"></i></a>
+                            </div>
+                            <div class="login l-1 l-o-2 "><a href="#" onclick="showFormLogin()"><i
+                                        class="fas fa-user"></i></a></div>
+                            <div class="cart l-1 "><a href="GioHang.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__img l-12">
+                <img src="../img/trangchu/1.jpg" alt="logo" width="100%">
+            </div>
+            <div class="menu" id="menu" style="background-color:aliceblue  ">
+                <ul>
+                    <li id="test" class="li1"><a style="color: black;" href="../html/Home.html" id="sp_click">Trang chủ</a></li>
+                    <li class="li1"><a style="color: black;" href="../html/SanPham.html">Sản phẩm
+                            <span class="arrow"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul class="submenu">
+                            <li class="li2"><a href="../html/SanPham.html">Thiệp hiện đại</a></li>
+                            <li class="li2"><a href="../html/SanPham.html">Thiệp hình ảnh</a></li>
+                            <li class="li2"><a href="../html/SanPham.html">Thiệp Lazer</a></li>
+                            <li class="li2"><a href="../html/SanPham.html">Thiệp mạ kim & Debossed</a></li>
+                            <li class="li2"><a href="../html/SanPham.html">Thiệp vẽ hoa</a></li>
+                            <li class="li2"><a href="../html/SanPham.html">Thiệp truyền thông</a></li>
+                        </ul>
+                    </li>
+                    <li class="li1"><a style="color: black;" href="../html/Blog.html">Blog</a></li>
+                    <li class="li1"><a style="color: black;" href="GioiThieu.html">Giới thiệu</a></li>
+                    <li class="li1"><a style="color: black;" href="../html/LienHe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!-- Điều quan tâm -->
+            <div class="info l-12">
+                <div class="row">
+                    <h1 class="l-12 c-12 " style="text-align: center;">ĐIỀU BẠN QUAN TÂM</h1>
+                    <div class="l-4 c-12 info__item">
+                        <img src="../img/trangchu/BANNER-Dieu-ban-quan-tam_SU-KHAC-BIET_380x179px.jpg" alt="ảnh">
+                        <h4>Sự khác biệt</h4>
+                        <p>Xem chi tiết</p>
+                    </div>
+                    <div class="l-4 c-12 info__item">
+                        <img src="../img/trangchu/BANNER-Dieu-ban-quan-tam_SU-KHAC-BIET_380x179px.jpg" alt="ảnh">
+                        <h4>Sự khác biệt</h4>
+                        <p>Xem chi tiết</p>
+                    </div>
+                    <div class="l-4 c-12 info__item">
+                        <img src="../img/trangchu/BANNER-Dieu-ban-quan-tam_SU-KHAC-BIET_380x179px.jpg" alt="ảnh">
+                        <h4>Sự khác biệt</h4>
+                        <p>Xem chi tiết</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Lý do chọn thương hiệu -->
+            <div class="reason l-12">
+                <div class="row">
+                    <div class="reason__img l-4 l-o-1 c-12">
+                        <img src="../img/trangchu/2.jpg" alt="ảnh" width="100%">
+                    </div>
+                    <div class="reason__text l-6 c-12">
+                        <h1>CHÀO MỪNG ĐẾN VỚI PEONIES</h1>
+                        <h4>Peonies xin gửi lời chào thân ái !</h4>
+                        <p>Chúng tôi là đơn vị chuyên thiết kế - in ấn - hoàn thiện trực tiếp thiệp các loại, đặc biệt thiệp cưới, với phong cách hiện đại được sản xuất riêng dành cho bạn. Dây chuyền in ấn hoàn thiện khép kín, trên chất liệu giây mỹ thuật
+                            cao cấp.
+                        </p>
+                        <button class="btnReason">Vì sao nên chọn Peonies</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Bộ sưu tập -->
+            <div class="main l-12">
+                <div class="row">
+                    <h1 class=" l-12 c-12">BỘ SƯU TẬP</h1>
+                    <div class="main__item hiendai l-4 c-6">
+                        <a href="SanPham.html">
+                            <h1>THIỆP HIỆN ĐẠI</h1>
+                        </a>
+                    </div>
+                    <div class="main__item hinhanh l-4 c-6">
+                        <a href="SanPham.html">
+                            <h1>THIỆP HÌNH ẢNH</h1>
+                        </a>
+                    </div>
+                    <div class="main__item lazer l-4 c-6">
+                        <a href="SanPham.html">
+                            <h1>THIỆP LAZER</h1>
+                        </a>
+                    </div>
+                    <div class="main__item makim l-4 c-6">
+                        <a href="SanPham.html">
+                            <h1>THIỆP MẠ KIM & DEBOSSED</h1>
+                        </a>
+                    </div>
+                    <div class="main__item truyenthong l-4 c-6">
+                        <a href="SanPham.html">
+                            <h1>THIỆP TRUYỀN THỐNG</h1>
+                        </a>
+                    </div>
+                    <div class="main__item vehoa l-4 c-6">
+                        <a href="SanPham.html">
+                            <h1>THIỆP VẼ HOA</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Thiệp nổi bật -->
+            <div class="item-main noiBat">
+                <div class="content" style="margin-top: 20px;">
+                    <a href="#">
+                        <h2>Sản phẩm nổi bật</h2>
+                    </a>
+                    <br>
+                    <p>____________</p>
+                </div>
+                <div class="noiBat_main">
+                    <div class="noiBat_item itemsp1 ">
+                        <div class="img-container">
+                            <img src="../img/thiepnoibat/P0215_Botanical-Kraft-4-700x700.jpg" width="100%">
+                        </div>
+                        <div class="detailsp">
+                            <p class="detailsp_tensp"><a id="sp1">Thiệp nổi tiếng 1</a> </p>
+                            <p class="detailsp_giaGoc sl">19.000đ</p>
+                            <p class="detailsp_giaSale">- 10.000đ</p>
+                            <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="noiBat_item itemsp2">
+                        <div class="img-container"><img src="../img/thiepnoibat/P216_Botanical-Amona-3-700x700.jpg " width="100%"></div>
+
+                        <div class="detailsp">
+                            <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1</a>
+                            </p>
+                            <p class="detailsp_giaGoc">19.000đ</p>
+                            <p class="detailsp_giaSale"></p>
+                            <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="noiBat_item itemsp3">
+                        <div class="img-container"><img src="../img/thiepnoibat/TH050418-ORANFLO_01-700x700.jpg" width="100%"></div>
+
+                        <div class="detailsp">
+                            <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1 </a> </p>
+                            <p class="detailsp_giaGoc sl">19.000đ</p>
+                            <p class="detailsp_giaSale">- 10.000đ</p>
+                            <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="noiBat_item itemsp4">
+                        <div class="img-container"><img src="../img/thiepnoibat/U0045_Botanical-Nature_02-700x700.jpg" width="100%"></div>
+
+                        <div class="detailsp">
+                            <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1</a></p>
+                            <p class="detailsp_giaGoc">19.000đ</p>
+                            <p class="detailsp_giaSale"></p>
+                            <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="noiBat_main">
+                    <div class="noiBat_item itemsp1 ">
+                        <div class="img-container"> <img src="../img/thiepnoibat/U0046_Greenery-Magnolia_01-700x700.jpg" width="100%"></div>
+
+                        <div class="detailsp">
+                            <p class="detailsp_tensp"><a href="#">Thiệp nổi bật 1</a></p>
+                            <p class="detailsp_giaGoc sl">19.000đ</p>
+                            <p class="detailsp_giaSale">- 10.000đ</p>
+                            <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="noiBat_item itemsp2">
+                        <div class="img-container"><img src="../img/thiepnoibat/P0215_Botanical-Kraft-4-700x700.jpg" width="100%"></div>
+
+                        <div class="detailsp">
+                            <p class="detailsp_tensp"><a href="#">Thiệp nổi bật 1</a></p>
+                            <p class="detailsp_giaGoc">19.000đ</p>
+                            <p class="detailsp_giaSale"></p>
+                            <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="noiBat_item itemsp3">
+                        <div class="img-container"><img src="../img/thiepnoibat/P216_Botanical-Amona-3-700x700.jpg" width="100%"></div>
+
+                        <div class="detailsp">
+                            <p class="detailsp_tensp"><a href="#">Thiệp nổi bật 1</a></p>
+                            <p class="detailsp_giaGoc">19.000đ</p>
+                            <p class="detailsp_giaSale"></p>
+                            <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="noiBat_item itemsp4">
+                        <div class="img-container"><img src="../img/thiepnoibat/U0046_Greenery-Magnolia_01-700x700.jpg" width="100%"></div>
+
+                        <div class="detailsp">
+                            <p class="detailsp_tensp"><a href="#">Thiệp nổi bật 1</a> </p>
+                            <p class="detailsp_giaGoc">19.000đ</p>
+                            <p class="detailsp_giaSale"></p>
+                            <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="moresp"><a href="">Xem thêm sản phẩm <i class="fas fa-arrow-right"></i></a></div>
+                <!-- Thiệp nổi tiếng -->
+                <div class="item-main noiBat">
+                    <div class="content" style="margin-top: 20px;">
+                        <a href="#">
+                            <h2>Sản phẩm nổi tiếng</h2>
+                        </a>
+                        <br>
+                        <p>____________</p>
+                    </div>
+                    <div class="noiBat_main">
+                        <div class="noiBat_item itemsp1 ">
+                            <div class="img-container">
+                                <img src="../img/thiepnoibat/P0215_Botanical-Kraft-4-700x700.jpg" width="100%">
+                            </div>
+                            <div class="detailsp">
+                                <p class="detailsp_tensp"><a id="sp1">Thiệp nổi tiếng 1</a> </p>
+                                <p class="detailsp_giaGoc sl">19.000đ</p>
+                                <p class="detailsp_giaSale">- 10.000đ</p>
+                                <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div class="noiBat_item itemsp2">
+                            <div class="img-container"><img src="../img/thiepnoibat/P216_Botanical-Amona-3-700x700.jpg " width="100%"></div>
+
+                            <div class="detailsp">
+                                <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1</a>
+                                </p>
+                                <p class="detailsp_giaGoc">19.000đ</p>
+                                <p class="detailsp_giaSale"></p>
+                                <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div class="noiBat_item itemsp3">
+                            <div class="img-container"><img src="../img/thiepnoibat/TH050418-ORANFLO_01-700x700.jpg" width="100%"></div>
+
+                            <div class="detailsp">
+                                <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1 </a> </p>
+                                <p class="detailsp_giaGoc sl">19.000đ</p>
+                                <p class="detailsp_giaSale">- 10.000đ</p>
+                                <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div class="noiBat_item itemsp4">
+                            <div class="img-container"><img src="../img/thiepnoibat/U0045_Botanical-Nature_02-700x700.jpg" width="100%"></div>
+
+                            <div class="detailsp">
+                                <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1</a></p>
+                                <p class="detailsp_giaGoc">19.000đ</p>
+                                <p class="detailsp_giaSale"></p>
+                                <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="noiBat_main">
+                        <div class="noiBat_item itemsp1 ">
+                            <div class="img-container"> <img src="../img/thiepnoibat/U0046_Greenery-Magnolia_01-700x700.jpg" width="100%"></div>
+
+                            <div class="detailsp">
+                                <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1</a></p>
+                                <p class="detailsp_giaGoc sl">19.000đ</p>
+                                <p class="detailsp_giaSale">- 10.000đ</p>
+                                <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div class="noiBat_item itemsp2">
+                            <div class="img-container"><img src="../img/thiepnoibat/P0215_Botanical-Kraft-4-700x700.jpg" width="100%"></div>
+
+                            <div class="detailsp">
+                                <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1</a></p>
+                                <p class="detailsp_giaGoc">19.000đ</p>
+                                <p class="detailsp_giaSale"></p>
+                                <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div class="noiBat_item itemsp3">
+                            <div class="img-container"><img src="../img/thiepnoibat/P216_Botanical-Amona-3-700x700.jpg" width="100%"></div>
+
+                            <div class="detailsp">
+                                <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1</a></p>
+                                <p class="detailsp_giaGoc">19.000đ</p>
+                                <p class="detailsp_giaSale"></p>
+                                <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div class="noiBat_item itemsp4">
+                            <div class="img-container"><img src="../img/thiepnoibat/U0046_Greenery-Magnolia_01-700x700.jpg" width="100%"></div>
+
+                            <div class="detailsp">
+                                <p class="detailsp_tensp"><a href="#">Thiệp nổi tiếng 1</a> </p>
+                                <p class="detailsp_giaGoc">19.000đ</p>
+                                <p class="detailsp_giaSale"></p>
+                                <button class="themVaoGioHang">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="moresp"><a href="">Xem thêm sản phẩm <i class="fas fa-arrow-right"></i></a></div>
+                    <!-- Công nghệ in ấn -->
+                    <div class="info__print l-12">
+                        <div class="row">
+                            <div class="reason__text l-3 l-o-1 c-12">
+                                <h4>In Ấn Hoàn Thiện</h4>
+                                <p>Với công nghệ in ấn hiện đại đến từ đất nước hoa Anh Đào, kết hợp phương pháp in nhũ, in nổi, bế theo khuôn, cùng phụ kiện độc đáo sẽ mang đến cho bạn bộ thiệp cưới ấn tượng nhất từ trước đến nay.
+                                </p>
+                                <button class="btnReason">Xem thêm</button>
+                            </div>
+                            <div class="reason__img l-8 c-12">
+                                <img src="../img/trangchu/BANNER_898x504px.jpg" alt="ảnh" width="75%" style="margin-top: 30px;">
+                            </div>
+                        </div>
+                        <!-- Dịch vụ -->
+                        <div class="giaoHangP">
+                            <div class="content" style="margin-top: 20px;">
+                                <a href="#">
+                                    <h2>Dịch vụ ưu đãi</h2>
+                                </a><br>
+                                <p>______________</p>
+                            </div>
+                            <div class="giaoHang">
+                                <div class="giaoHang_item free">
+                                    <p><i class="fas fa-shipping-fast i1"></i></p>
+                                    <h3>Miễn phí giao hàng</h3>
+                                    <p>Giao hàng nhanh chóng, mọi lúc mọi nơi, giao tới tận nhà, tận giường cho các bạn...
+                                    </p>
+                                    <a href="#"><i class="fas fa-arrow-circle-right i2"></i></a>
+                                </div>
+                                <div class="giaoHang_item doiTra">
+                                    <p><i class="fas fa-shopping-bag i1"></i></p>
+                                    <h3>Miễn phí giao hàng</h3>
+                                    <p>Giao hàng nhanh chóng, mọi lúc mọi nơi, giao tới tận nhà, tận giường cho các bạn...
+                                    </p>
+                                    <a href="#"><i class="fas fa-arrow-circle-right i2"></i></a>
+                                </div>
+                                <div class="giaoHang_item thanhToan">
+                                    <p><i class="fas fa-money-check-alt i1"></i></p>
+                                    <h3>Miễn phí giao hàng</h3>
+                                    <p>Giao hàng nhanh chóng, mọi lúc mọi nơi, giao tới tận nhà, tận giường cho các bạn...
+                                    </p>
+                                    <a href="#"><i class="fas fa-arrow-circle-right i2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footerP">
+                            <div class="footer">
+                                <div class="footer_item left">
+                                    <ul class="footer_ul">
+                                        <li><img src="../img/trangchu/logo.png" width="400px;"></li>
+                                    </ul>
+                                </div>
+                                <div class="footer_item between">
+                                    <ul class="footer_ul">
+                                        <li><a href="../html/GioiThieu.html">Giới thiệu</a></li>
+                                        <li><a href="../html/Blog.html">Tin tức & sự kiện</a></li>
+                                        <li><a href="../html/SanPham.html">Cửa hàng</a></li>
+                                        <li><a href="../html/LienHe.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer_item between">
+                                    <ul class="footer_ul">
+                                        <li><a href="#" onclick="showFormLogin()">Tài khoản</a></li>
+                                        <li><a href="GioHang.html">Giỏ hàng</a></li>
+                                        <li><a href="GioHang.html">Thanh toán</a></li>
+                                        <li><a href="GioHang.html">Kiểm tra đơn hàng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer_item right">
+                                    <ul class="footer_ul">
+                                        <li>
+                                            <h2>Nhận giảm giá 30%</h2>
+                                        </li>
+                                        <li>
+                                            <p>Chúng tôi sẽ thông báo về email của bạn mỗi khi có phiếu giảm giá tặng cho bạn
+                                            </p>
+                                        </li>
+                                        <li><input type="email" name="email" placeholder="Email...">
+                                            <button>Đăng kí</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer_last">
+                                <p style="text-align: center; color: black;">© 2022 Shop. All Rights Reserved. Designed by TrietLinh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="../css/lienhe.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/home.js"></script>
+</head>
+
+<body>
+    <div class="formLogin" id="formLogin">
+        <div class="form_Login_item login1">
+            <div class="login_item btn2" style="margin-left: 500px">
+                <button onclick="closeFormLogin()">&times;</button>
+            </div>
+            <div class="login_item title">
+                <h2>ĐĂNG NHẬP</h2>
+            </div>
+            <div class="login_item name">
+                <label for="name">Tên tài khoản </label><br />
+                <input type="text" name="name" id="name" placeholder="Tài khoản..." />
+                <span id="tb_tk" onclick="test()">(*)</span>
+            </div>
+            <div class="login_item pass">
+                <label for="pass">Mật khẩu*</label><br />
+                <input type="password" name="pass" id="pass" placeholder="Mật khẩu..." />
+                <span id="tb_pass">(*)</span>
+            </div>
+
+            <div class="login_item radio">
+                <input type="radio" name="radio" id="radio" />
+                <label for="radio">Ghi nhớ mật khẩu</label><br />
+            </div>
+            <div class="login_item btn">
+                <button id="dn" type="submit">ĐĂNG NHẬP</button>
+            </div>
+
+            <div class="login_item quenPass">
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+            <div>
+                <label for="">Tạo tài khoản mới</label>
+                <button><a href="../html/DangKy.html">Đăng ký</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="header">
+            <div class="logo" style="background-color: #d8e4fc">
+                <div class="logo-item item1"></div>
+                <div class="logo-item item2">
+                    <img src="../img/trangchu/logo.png" alt="ảnh" width="70%" />
+                </div>
+                <div class="logo-item item3">
+                    <div class="search l-5 l-o-2 search__container">
+                        <input id="search" type="search" placeholder="Tìm kiếm..." />
+                        <a href="#">
+                            <i class="fas fa-search search__link"></i
+                            ></a>
+                        </div>
+                        <div class="login">
+                            <a href="#" onclick="showFormLogin()"
+                                ><i class="fas fa-user"></i
+                            ></a>
+                        </div>
+                        <div class="cart">
+                            <a href="../html/GioHang.html"
+                                ><i class="fas fa-shopping-cart"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu" id="menu" style="background-color: aliceblue">
+                    <ul>
+                        <li id="test" class="li1">
+                            <a href="../html/Home.html" id="sp_click"
+                                >Trang chủ</a
+                            >
+                        </li>
+                        <li class="li1">
+                            <a href="../html/SanPham.html"
+                                >Sản phẩm
+                                <span class="arrow"
+                                    ><i class="fas fa-angle-down"></i
+                                ></span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="li2">
+                                    <a href="../html/SanPham.html"
+                                        >Thiệp hiện đại</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html"
+                                        >Thiệp hình ảnh</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html"
+                                        >Thiệp Lazer</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html"
+                                        >Thiệp mạ kim & Debossed</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html"
+                                        >Thiệp vẽ hoa</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html"
+                                        >Thiệp truyền thông</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li1">
+                            <a href="../html/Blog.html">Blog</a>
+                        </li>
+                        <li class="li1">
+                            <a href="GioiThieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="li1">
+                            <a href="../html/LienHe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main_header">
+                    <a href="../html/Home.html">Trang chủ</a> /
+                    <p>Liên hệ</p>
+                </div>
+                <div class="main_content">
+                    <div class="main_content-left">
+                        <img
+                            src="../img/thiepimg/jennyparty.jpg"
+                            width="100%"
+                            alt="cửa hàng"
+                        />
+                    </div>
+                    <div class="main_content-right">
+                        <h1>Thông tin liên hệ</h1>
+                        <h5>Địa chỉ chúng tôi :</h5>
+                        12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí
+                        Minh.
+                        <br />
+                        <h5>Email :</h5>
+                        peo@gmail.com
+                        <br />
+                        <h5>Điện thoại :</h5>
+                        0977 777 777
+                        <br />
+                        <h5>Thời gian làm việc :</h5>
+                        Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ nhật từ 8h00
+                        đến 17h00
+                        <br />
+                        <h5><b> Mạng xã hội:</b></h5>
+                        <div class="main_icon">
+                            <a href="https://www.facebook.com">
+                                <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com" class="m-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" class="m-3">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="report">
+                <div class="header_report">
+                    <h1>Gửi đóng góp đến chúng tôi</h1>
+                </div>
+                <div class="main_report">
+                    <div class="main_report_left">
+                        <p>Họ và tên</p>
+                        <input type="text" placeholder="Họ và tên của bạn..." />
+                        <p>Số điện thoại</p>
+                        <input type="text" placeholder="Số điện thoại..." />
+                        <p>Email:</p>
+                        <input type="email" placeholder="Email..." />
+                    </div>
+                    <div class="main_report_right">
+                        <p>Nội dung</p>
+                        <textarea name="noidung" id="" placeholder="Nội dung bạn muốn gửi cho chúng tôi..." rows="9"></textarea>
+                        <button id="gui">Gửi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerP">
+            <div class="footer">
+                <div class="footer_item left">
+                    <ul class="footer_ul">
+                        <li>
+                            <img src="../img/trangchu/logo.png" width="400px;" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item between">
+                    <ul class="footer_ul">
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Tin tức & sự kiện</a></li>
+                        <li><a href="">Cửa hàng</a></li>
+                        <li><a href="/HTML/LienHe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer_item between">
+                    <ul class="footer_ul">
+                        <li>
+                            <a href="#" onclick="showFormLogin()">Tài khoản</a
+                                >
+                            </li>
+                            <li><a href="GioHang.html">Giỏ hàng</a></li>
+                        <li><a href="GioHang.html">Thanh toán</a></li>
+                        <li>
+                            <a href="GioHang.html">Kiểm tra đơn hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item right">
+                    <ul class="footer_ul">
+                        <li>
+                            <h2>Nhận giảm giá 30%</h2>
+                        </li>
+                        <li>
+                            <p>
+                                Chúng tôi sẽ thông báo về email của bạn mỗi khi có phiếu giảm giá tặng cho bạn
+                            </p>
+                        </li>
+                        <li>
+                            <input type="email" name="email" placeholder="Email..." />
+                            <button>Đăng kí</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_last">
+                <p style="text-align: center; color: black">
+                    © 2022 Shop. All Rights Reserved. Designed by TrietLinh
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

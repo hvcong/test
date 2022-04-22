@@ -1,0 +1,605 @@
+* {
+    color: #666666;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #f4f4f7;
+}
+
+.search,
+.login,
+.cart {
+    margin-top: 10px;
+    padding-right: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.search i:hover,
+.cart i:hover,
+.login i:hover {
+    color: black !important;
+    font-size: 20px;
+}
+
+.search__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__link {
+    padding-left: 8px;
+}
+
+
+/** Menu **/
+
+.menu a {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    text-align: center;
+    position: relative;
+}
+
+.menu .li1 {
+    padding: 20px 40px 10px 40px;
+}
+
+.menu li:hover .submenu>li {
+    display: block;
+    top: 0px;
+    background-color: white;
+    border-top: 0.5px solid #b8b8b8;
+}
+
+.submenu li:hover {
+    background-color: #b8b8b8 !important;
+}
+
+.submenu li {
+    width: 150px;
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    margin-top: 10px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu .li2,
+.li3 {
+    padding: 10px 10px;
+}
+
+.submenu .li3 {
+    margin-top: -0.5px;
+    margin-left: 5px;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+    background-color: white;
+    border-top: 0.5px solid #b8b8b8;
+}
+
+.submenu-2 li {
+    display: none;
+    width: 190px;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+}
+
+.arrow {
+    margin-left: 8px;
+    color: #eee;
+    font-size: 12px;
+}
+
+.menu {
+    background-color: white;
+}
+
+
+/** Menu sticky */
+
+.sticky {
+    box-shadow: 1px 1px 1px 1px rgb(163, 162, 162);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    opacity: 1;
+    background-color: rgb(162, 185, 185);
+    left: 0;
+    right: 0;
+}
+
+
+/* quan tâm */
+
+.info,
+.main {
+    margin-top: 100px;
+}
+
+.info h1,
+.main h1 {
+    font-size: 30px !important;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f1e5de;
+}
+
+.info__item {
+    margin-top: 30px;
+    text-align: center;
+    height: auto;
+    /** Chiều cao tự động **/
+    margin: 10px auto;
+    /** Cách trên dưới 10px và nằm giữa **/
+    overflow: hidden;
+    /** DÒNG BẮT BUỘC CÓ **/
+    position: relative;
+    /** Chiều rộng vùng chứa **/
+}
+
+.info__item img {
+    width: 75%;
+    /** Hình ảnh rộng 100% so với vùng chứa **/
+    transition: all 1s;
+    /** Tạo độ mượt **/
+}
+
+.info__item p {
+    color: red;
+}
+
+.info__item:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* Tại sao chọn */
+
+.reason,
+.info__print {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.reason__text h1,
+h4,
+p,
+button {
+    margin-top: 20px;
+}
+
+.btnReason {
+    border-radius: 5px;
+    background-color: #e7276b;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 22%);
+    padding: 10px;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.reason:hover .btnReason {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* bộ sưu tập */
+
+.main h1 {
+    text-align: center;
+}
+
+.main__item {
+    height: 100%;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__item h1 {
+    margin-top: 350px;
+    color: #000;
+    font-size: 20px !important;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    background-color: rgb(0 0 0 / 19%);
+}
+
+.hiendai {
+    background-image: url(../img/trangchu/BANNER-BO-SUU-TAP-THIEP-CUOI_HIEN-DAI_587x587px-copy.jpg);
+}
+
+.hinhanh {
+    background-image: url(../img/trangchu/BANNER-BO-SUU-TAP-THIEP-CUOI_HINH-ANH_587x587px.jpg);
+}
+
+.lazer {
+    background-image: url(../img/trangchu/BANNER-BO-SUU-TAP-THIEP-CUOI_LAZER_587x587px.jpg);
+}
+
+.makim {
+    background-image: url(../img/trangchu/BANNER-BO-SUU-TAP-THIEP-CUOI_EP-KIM_587x587px.jpg);
+}
+
+.truyenthong {
+    background-image: url(../img/trangchu/BANNER-BO-SUU-TAP-THIEP-CUOI_TRUYEN-THONG_587x587px.jpg);
+}
+
+.vehoa {
+    background-image: url(../img/trangchu/thiep-cuoi-ve-hoa.jpg);
+}
+
+
+/** form dang nhap */
+
+.formLogin {
+    opacity: 1 !important;
+    position: absolute;
+    top: 30px;
+    left: 230px;
+    display: flex;
+    display: none;
+    background-color: white;
+    flex-direction: row;
+    padding: 30px 0;
+    padding-top: 10px;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+    border: 1px solid rgb(133, 137, 138);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.form_Login_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    padding-right: 60px;
+}
+
+.dangKi {
+    border-left: 1px solid rgb(217, 221, 213);
+}
+
+.login1 {
+    padding-right: 60px;
+    padding-top: 55px;
+}
+
+.login_item {
+    padding: 10px;
+}
+
+.login_item input {
+    margin-top: 10px;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.radio input {
+    width: 10px;
+}
+
+.btn button {
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: rgb(121, 129, 121)
+}
+
+.quenPass a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login_item.quenPass {
+    padding: 5px !important;
+}
+
+.quenPass a {
+    padding-left: 5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    background-color: rgb(207, 204, 204);
+    color: dimgray;
+    padding: 10px 0;
+}
+
+.btn button:hover {
+    background-color: rgb(233, 182, 201);
+}
+
+.quenPass a:hover {
+    color: black;
+}
+
+.btn2 button {
+    padding: 0px 5px;
+    margin-left: 320px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(138, 126, 126);
+}
+
+.login_item.btn2 button {
+    color: white;
+    font-size: 30px;
+}
+
+.btn2 button:hover {
+    background-color: rgb(233, 182, 201);
+}
+
+.login1 span,
+.dangKi span {
+    font-size: 15px;
+    color: red;
+}
+
+
+/* nổi bật */
+
+.content {
+    padding: 40px 0px 20px;
+    text-align: center;
+    background-color: #f1e5de;
+}
+
+.content p,
+h2 {
+    font-size: 30px !important;
+    font-weight: 10 !important;
+    color: black !important;
+}
+
+.content p {
+    margin-top: -30px;
+}
+
+.noiBat_main {
+    padding: 0 90px 0 90px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.noiBat_item {
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #f4f4f7;
+    flex: 2;
+    padding: 0px 0px 10px 0px;
+}
+
+.detailsp {
+    border-top: 3px solid #f4f4f7;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.detailsp p {
+    font-size: 13px !important;
+    display: inline;
+}
+
+.detailsp_tensp {
+    padding-bottom: 10px;
+    display: block !important;
+}
+
+.sl {
+    text-decoration: line-through;
+}
+
+.noiBat_item {
+    box-shadow: 0px 3px 2px 0px #b8b8b8;
+}
+
+.detailsp_giaSale {
+    color: red;
+}
+
+.moresp {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.moresp a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.detailsp_tensp a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.themVaoGioHang {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    color: white;
+    background-color: rgb(153, 64, 52);
+}
+
+.themVaoGioHang:hover {
+    color: rgb(101, 219, 46);
+    background-color: rgb(45, 92, 114);
+}
+
+
+/* zoom ảnh khi hover */
+
+.img-container {
+    height: auto;
+    /** Chiều cao tự động **/
+    margin: 10px auto;
+    /** Cách trên dưới 10px và nằm giữa **/
+    overflow: hidden;
+    /** DÒNG BẮT BUỘC CÓ **/
+    position: relative;
+    /** Chiều rộng vùng chứa **/
+}
+
+.img-container img {
+    width: 100%;
+    /** Hình ảnh rộng 100% so với vùng chứa **/
+    transition: all 1s;
+    /** Tạo độ mượt **/
+}
+
+.img-container:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/** GiaoHang*/
+
+.giaoHang {
+    display: flex;
+}
+
+.giaoHang_item {
+    padding: 70px 60px;
+    text-align: center;
+    flex: 1;
+}
+
+.giaoHang_item .i1 {
+    font-size: 50px;
+}
+
+.giaoHang_item .i2 {
+    font-size: 30px;
+    padding-top: 35px;
+}
+
+.giaoHang_item h3 {
+    padding: 30px 0px 10px 0px;
+}
+
+.giaoHang_item a:hover i {
+    color: black !important;
+}
+
+
+/** Footer **/
+
+.footerP {
+    background-color: #5b5b5b;
+    color: white;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer_item {
+    padding: 50px 30px 50px 30px;
+}
+
+.footer .left {
+    flex: 3;
+}
+
+.footer .between {
+    color: white;
+    flex: 2;
+}
+
+.footer .right {
+    flex: 5;
+    color: white;
+}
+
+.footer .right h2 {
+    color: white !important;
+}
+
+.footer .right p {
+    color: white;
+}
+
+.footer_ul li {
+    list-style: none;
+    display: block;
+    padding: 10px;
+}
+
+.footer_ul a {
+    color: white;
+}
+
+.right h2 {
+    font-size: 25px;
+}
+
+.footer_ul li:hover a {
+    color: #666666;
+}

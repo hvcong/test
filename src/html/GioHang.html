@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="../css/giohang.css " />
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css " />
+    <script src="../js/jquery-3.6.0.min.js "></script>
+    <script src="../js/home.js "></script>
+</head>
+
+<body>
+    <div class="formLogin" id="formLogin ">
+        <div class="form_Login_item login1">
+            <div class="login_item btn2" style="margin-left: 500px">
+                <button onclick="closeFormLogin() ">&times;</button>
+            </div>
+            <div class="login_item title">
+                <h2>ĐĂNG NHẬP</h2>
+            </div>
+            <div class="login_item name">
+                <label for="name ">Tên tài khoản </label><br />
+                <input type="text " name="name " id="name " placeholder="Tài khoản... " />
+                <span id="tb_tk " onclick="test() ">(*)</span>
+            </div>
+            <div class="login_item pass">
+                <label for="pass ">Mật khẩu*</label><br />
+                <input type="password " name="pass " id="pass " placeholder="Mật khẩu... " />
+                <span id="tb_pass ">(*)</span>
+            </div>
+
+            <div class="login_item radio">
+                <input type="radio " name="radio " id="radio " />
+                <label for="radio ">Ghi nhớ mật khẩu</label><br />
+            </div>
+            <div class="login_item btn">
+                <button id="dn " type="submit ">ĐĂNG NHẬP</button>
+            </div>
+
+            <div class="login_item quenPass">
+                <a href="# ">Quên mật khẩu?</a>
+            </div>
+            <div>
+                <label for=" ">Tạo tài khoản mới</label>
+                <button><a href="../html/DangKy.html ">Đăng ký</a></button>
+            </div>
+        </div>
+        <div class="form_Login_item dangKi">
+            <div class="login_item btn2">
+                <button onclick="closeFormLogin() ">&times;</button>
+            </div>
+            <div class="login_item title">
+                <h2>ĐĂNG KÝ</h2>
+            </div>
+            <div class="login_item email">
+                <label for="email ">Địa chỉ email*</label><br />
+                <input type="email " name="email " id="email2 " placeholder="Email... " />
+                <span id="tb_e2 ">(*)</span>
+            </div>
+            <div class="login_item name">
+                <label for="name2 ">Tài khoản*</label><br />
+                <input type="text " name="name2 " id="name2 " placeholder="Tài khoản... " />
+                <span id="tb_tk2 ">(*)</span>
+            </div>
+            <div class="login_item pass">
+                <label for="pass2 ">Mật khẩu*</label><br />
+                <input type="password " name="pass2 " id="pass2 " placeholder="Mật khẩu... " />
+                <span id="tb_pass2 ">(*)</span><br /><br />
+                <span id="tb_dk ">&nbsp;</span>
+            </div>
+            <div class="login_item btn">
+                <button id="dk " type="submit ">ĐĂNG KÝ</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="container ">
+        <div class="header">
+            <div class="logo" style="background-color: #d8e4fc">
+                <div class="logo-item item1"></div>
+                <div class="logo-item item2">
+                    <img src="../img/trangchu/logo.png " alt="ảnh " width="70% " />
+                </div>
+                <div class="logo-item item3">
+                    <div class="search l-5 l-o-2 search__container">
+                        <input id="search " type="search " placeholder="Tìm kiếm... " />
+                        <a href="# ">
+                            <i class="fas fa-search search__link"></i
+                            ></a>
+                        </div>
+                        <div class="login">
+                            <a href="# " onclick="showFormLogin() "
+                                ><i class="fas fa-user"></i
+                            ></a>
+                        </div>
+                        <div class="cart">
+                            <a href="../html/GioHang.html "
+                                ><i class="fas fa-shopping-cart"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="menu"
+                    id="menu "
+                    style="background-color: aliceblue"
+                >
+                    <ul>
+                        <li id="test " class="li1">
+                            <a href="../html/Home.html " id="sp_click "
+                                >Trang chủ</a
+                            >
+                        </li>
+                        <li class="li1">
+                            <a href="../html/SanPham.html "
+                                >Sản phẩm
+                                <span class="arrow"
+                                    ><i class="fas fa-angle-down"></i
+                                ></span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="li2">
+                                    <a href="../html/SanPham.html "
+                                        >Thiệp hiện đại</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html "
+                                        >Thiệp hình ảnh</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html "
+                                        >Thiệp Lazer</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html "
+                                        >Thiệp mạ kim & Debossed</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html "
+                                        >Thiệp vẽ hoa</a
+                                    >
+                                </li>
+                                <li class="li2">
+                                    <a href="../html/SanPham.html "
+                                        >Thiệp truyền thông</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li1">
+                            <a href="../html/Blog.html ">Blog</a>
+                        </li>
+                        <li class="li1"><a href=" ">Giới thiệu</a></li>
+                        <li class="li1">
+                            <a href="../html/LienHe.html ">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gh_main">
+                <div class="gh_main_item gh_top"></div>
+                <div class="gh_main_item gh_bot">
+                    <!-- Hiển thị sản phẩm -->
+                    <div class="gh_bot_item gh_left2">
+                        <div class="gh_left2_item line_bottom">
+                            <h3>Giỏ hàng</h3>
+                            <span>(3 sản phẩm)</span>
+                        </div>
+                        <div class="gh_left2_item_bot">
+                            <div class="gh_sp">
+                                <div class="gh_sp_item gh_sp_item_left">
+                                    <div class="gh_sp_item_left_item gh_sp_img">
+                                        <img
+                                            src="../img/thiepnoibat/P0215_Botanical-Kraft-4-700x700.jpg "
+                                            width="100% "
+                                            alt=" "
+                                        />
+                                    </div>
+                                    <div
+                                        class="gh_sp_item_left_item gh_sp_detail"
+                                    >
+                                        <a href="# "
+                                            ><b>Tên</b>: Movado Museum Classic
+                                            Watch</a
+                                        >
+                                        <p><b>Chất liệu</b>: Giấy Bristol</p>
+                                        <p><b>Màu sắc</b>: Trắng bạch kim</p>
+                                        <p><b>Cơ sở sản xuất</b>: Pháp</p>
+                                        <button class="xoa">Xóa</button>
+                                    </div>
+                                </div>
+                                <div class="gh_sp_item gh_sp_item_right">
+                                    <div
+                                        class="gh_sp_item_right_item gh_soLuong"
+                                    >
+                                        <h3>19.000đ</h3>
+                                        <span>25.000đ</span>
+                                    </div>
+                                    <div class="gh_sp_item_right_item gh_gia">
+                                        <span class="soLuong_click"
+                                            ><a href=" ">-</a></span
+                                        >
+                                        <span>2</span>
+                                        <span class="soLuong_click"
+                                            ><a href=" ">+</a></span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gh_sp">
+                                <div class="gh_sp_item gh_sp_item_left">
+                                    <div class="gh_sp_item_left_item gh_sp_img">
+                                        <img
+                                            src="../img/thiepnoibat/P216_Botanical-Amona-3-700x700.jpg "
+                                            width="100% "
+                                            alt=" "
+                                        />
+                                    </div>
+                                    <div
+                                        class="gh_sp_item_left_item gh_sp_detail"
+                                    >
+                                        <a href="# "
+                                            ><b>Tên</b>: Movado Museum Classic
+                                            Watch</a
+                                        >
+                                        <p><b>Chất liệu</b>: giấy Bristol</p>
+                                        <p><b>Màu sắc</b>: Trắng bạch kim</p>
+                                        <p><b>Cơ sở sản xuất</b>: Pháp</p>
+                                        <button class="xoa">Xóa</button>
+                                    </div>
+                                </div>
+                                <div class="gh_sp_item gh_sp_item_right">
+                                    <div
+                                        class="gh_sp_item_right_item gh_soLuong"
+                                    >
+                                        <h3>19.000đ</h3>
+                                        <span>25.000đ</span>
+                                    </div>
+                                    <div class="gh_sp_item_right_item gh_gia">
+                                        <span class="soLuong_click"
+                                            ><a href=" ">-</a></span
+                                        >
+                                        <span>2</span>
+                                        <span class="soLuong_click"
+                                            ><a href=" ">+</a></span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gh_sp">
+                                <div class="gh_sp_item gh_sp_item_left">
+                                    <div class="gh_sp_item_left_item gh_sp_img">
+                                        <img
+                                            src="../img/thiepnoibat/TH050418-ORANFLO_01-700x700.jpg "
+                                            width="100% "
+                                            alt=" "
+                                        />
+                                    </div>
+                                    <div
+                                        class="gh_sp_item_left_item gh_sp_detail"
+                                    >
+                                        <a href="# "
+                                            ><b>Tên</b>: Movado Museum Classic
+                                            Watch</a
+                                        >
+                                        <p><b>Chất liệu</b>: giấy Bristol</p>
+                                        <p><b>Màu sắc</b>: Trắng bạch kim</p>
+                                        <p><b>Cơ sở sản xuất</b>: Pháp</p>
+                                        <button class="xoa">Xóa</button>
+                                    </div>
+                                </div>
+                                <div class="gh_sp_item gh_sp_item_right">
+                                    <div
+                                        class="gh_sp_item_right_item gh_soLuong"
+                                    >
+                                        <h3>19.000đ</h3>
+                                        <span>25.000đ</span>
+                                    </div>
+                                    <div class="gh_sp_item_right_item gh_gia">
+                                        <span class="soLuong_click"
+                                            ><a href=" ">-</a></span
+                                        >
+                                        <span>2</span>
+                                        <span class="soLuong_click"
+                                            ><a href=" ">+</a></span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="muaThemSp">
+                                <a href="# "> Mua thêm sản phẩm</a>
+                                <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Hiển thị hóa đơn -->
+            <div class="gh_bot_item gh_right2">
+                <div class="gh_tinhTien_item gh_bgcolor">
+                    <h3>HÓA ĐƠN</h3>
+                </div>
+                <div class="gh_tinhTien_item">
+                    <div class="gh_tinhTien_item_left">
+                        <p>Tạm tính:</p>
+                    </div>
+                    <div class="gh_tinhTien_item_right">
+                        <p>19.000đ</p>
+                    </div>
+                </div>
+                <div class="gh_tinhTien_item">
+                    <div class="gh_tinhTien_item_left">
+                        <h4>Tổng tiền:</h4>
+                    </div>
+                    <div class="gh_tinhTien_item_right">
+                        <p>19.000đ</p>
+                    </div>
+                </div>
+                <div class="gh_tinhTien_item">
+                    <div class="gh_tinhTien_item_left">
+                        <h4>Mã giảm giá:</h4>
+                    </div>
+                    <div class="gh_tinhTien_item_right">
+                        <p>-30%</p>
+                    </div>
+                </div>
+                <div class="gh_tinhTien_item">
+                    <input type="text " placeholder="mã giảm giá... " />
+                    <button class="btn_dongY">Đồng ý</button>
+                </div>
+                <div class="gh_tinhTien_item">
+                    <button class="tienHanhDatHang">
+                                Tiến hành đặt hàng
+                            </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer ở đây nè -->
+    <div class="footerP">
+        <div class="footer">
+            <div class="footer_item left">
+                <ul class="footer_ul">
+                    <li>
+                        <img src="../img/trangchu/logo.png " width="400px; " />
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_item between">
+                <ul class="footer_ul">
+                    <li><a href=" ">Giới thiệu</a></li>
+                    <li><a href=" ">Tin tức & sự kiện</a></li>
+                    <li><a href=" ">Cửa hàng</a></li>
+                    <li><a href="/HTML/LienHe.html ">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer_item between">
+                <ul class="footer_ul">
+                    <li>
+                        <a href="# " onclick="showFormLogin() ">Tài khoản</a
+                            >
+                        </li>
+                        <li><a href=" ">Giỏ hàng</a></li>
+                    <li><a href=" ">Thanh toán</a></li>
+                    <li><a href=" ">Kiểm tra đơn hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer_item right">
+                <ul class="footer_ul">
+                    <li>
+                        <h2>Nhận giảm giá 30%</h2>
+                    </li>
+                    <li>
+                        <p>
+                            Chúng tôi sẽ thông báo về email của bạn mỗi khi có phiếu giảm giá tặng cho bạn
+                        </p>
+                    </li>
+                    <li>
+                        <input type="email " name="email " placeholder="Email... " />
+                        <button>Đăng kí</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_last">
+            <p style="text-align: center; color: black">
+                © 2022 Shop. All Rights Reserved. Designed by TrietLinh
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
